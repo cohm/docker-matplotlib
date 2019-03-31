@@ -1,9 +1,7 @@
 FROM alpine
-MAINTAINER Rui Zhang<rui.ustc@gmail.com>
+MAINTAINER Christian Ohm <ohm@cern.ch>
 
-VOLUME ["/www"]
-
-RUN apk add --no-cache libpng freetype libstdc++ python py-pip
+RUN apk add --no-cache libpng freetype libstdc++ python py-pip git
 RUN apk add --no-cache --virtual .build-deps \
 	    gcc \
 	    build-base \
