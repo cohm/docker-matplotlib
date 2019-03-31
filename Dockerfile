@@ -9,8 +9,7 @@ RUN apk add --no-cache --virtual .build-deps \
 	    libpng-dev \
 	    musl-dev \
 	    freetype-dev
-RUN ln -s /usr/include/locale.h /usr/include/xlocale.h \
-	&& pip install numpy \
+RUN pip install numpy \
 	&& pip install matplotlib \
 	&& apk del .build-deps
 
