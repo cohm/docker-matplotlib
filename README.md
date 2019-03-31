@@ -1,6 +1,6 @@
 ## Introduction
 
-this is a docker repository for matplotlib in Alpine
+This is a docker repository for matplotlib and git in Alpine
 
 
 ## Usage
